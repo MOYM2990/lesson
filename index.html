@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css">
+    <link rel="stylesheet" href="./style.css">
+	<script src="https://code.jquery.com/jquery-3.6.1.min.js"></script>
+</head>
+
+<body>
+    <header>
+
+        <ul class="slider">
+            <li class="background1"></li>
+            <li class="background2"></li>
+            <li class="background3"></li>
+            <li class="background4"></li>
+            <li class="background5"></li>
+        </ul>
+
+        <img class="header_logo" src="./images/logo.png" alt="logo">
+        <nav>
+            <ul>
+                <li><a href="#">北関東学院とは</a></li>
+                <li><a href="#">開講コース紹介</a></li>
+                <li><a href="#">お申込みについて</a></li>
+                <li><a href="#">アクセス</a></li>
+            </ul>
+        </nav>
+
+        <h3 class="header_caption">北関東学院はIT・WEB関連の仕事への就職を目指す<br>求職者のための職業訓練校です。</h3>
+
+        <div class="header_bottomarea">
+            <div class="header_colona">
+                <p>コロナ対策への<br>取り組み</p>
+            </div>
+            <div class="header_blog">
+                <a class="header_blog_contain" href="https://ameblo.jp/kps-sapporo/">講師陣ブログ</a>
+            </div>
+            <a class="header_hellowork" href="https://www.mhlw.go.jp/stf/seisakunitsuite/bunya/koyou_roudou/koyou/kyushokusha_shien/index.html"></a>
+        </div>
+    </header>
+    
+    <main>
+        <section class="section_about" id="about">
+            <div class="section_header">
+                <h2>北関東学院とは</h2>
+            </div>
+                <div class="about_box">
+                    <img src="./images/about_img_1.jpg" alt="KSbuilding">
+                    <p>北関東学院はハローワーク管轄のもとで企業が実施している求職者支援訓練（職業訓練）校です。<br>デジタル・IT関連の訓練を求職者向けに実施しており、ハローワークを通じてお申込みいただくことで、無料（別途教科書代要）で受講することができます。<br>当校でスキルアップを目指しながら、就職活動に取り組みませんか？
+                    </p>
+                </div>
+                <div class="about_box reverse">
+                    <img src="./images/about_img_2.jpg" alt="studying">
+                    <p>当校ではIT・Web関連業界への就職を希望される方向けに３つのコースをご用意。未経験からでも希望の職種を目指せるようサポートいたします。<br>また、当校では職業訓練に加えて就職支援も実施。早期の再就職を支援いたします。
+                    </p>
+                </div>
+        </section>
+
+        <section class="section_course" id="course">
+            <div class="section_header">
+                <h2>開講コース</h2>
+            </div>
+
+            <div class="course_box">
+                <div class="course_box_content">
+                    <a href="#">
+                        <img src="./images/design_img.jpg" alt="design">
+                        <p>ＷＥＢデザイン<br>クリエーター科</p>
+                        <span></span>
+                    </a>
+                </div>
+                
+                <div class="course_box_content">
+                    <a href="#">
+                        <img src="./images/frontend_img.jpg" alt="frontend">
+                        <p>ＷＥＢフロントエンド<br>構築科</p>
+                        <span></span>
+                    </a>
+                </div>
+
+                <div class="course_box_content">
+                    <a href="#">
+                        <img src="./images/program_img.jpg" alt="program">
+                        <p>ＷＥＢプログラミング<br>デザイン科</p>                        
+                        <span></span>
+                    </a>
+                </div>
+            </div>
+
+        </section>
+
+    </main>
+
+    <footer>
+        <div class="footer_area">
+            <img src="./images/footer.png" alt="telnumber">
+        </div>
+    </footer>
+
+	<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+	<script>
+		$('.slider').slick({
+            infinite: true,
+			autoplay: true, // 自動再生
+			autoplaySpeed: 4000,
+			fade: true, // スライドをフェードイン・フェードアウト
+			cssEase: 'linear',// アニメーション
+			speed: 600, // フェードアニメーションの速度設定
+			arrows: false, // 矢印
+			dots: false, // インジケーター
+		});
+	</script>
+</body>
+
+</html>
